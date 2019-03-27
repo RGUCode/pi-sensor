@@ -11,4 +11,4 @@
 
  //clear the matrix before we start
  matrix.clear();
- matrix.showMessage("HELLO!!", 0.5, [0,100,255], [150,150,0]")
+ matrix.showMessage("HELLO!!", 0.5, [0,100,255], [150,150,0])
