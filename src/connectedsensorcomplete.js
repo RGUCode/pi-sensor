@@ -15,7 +15,7 @@
 
 //these two lines set up the connection to our displaye server
 const mqtt = require('mqtt')
-const mqttClient = mqtt.connect('mqtt://10.85.33.37:1883')
+const mqttClient = mqtt.connect('mqtt://rg-n432-jpi.rgu.ac.uk:1883')
 
 //these two lines define our devices name and a topic for the display server
 const devicename = "testDevice"
@@ -43,7 +43,7 @@ mqttClient.on('connect', () => {
       "name": devicename,
       "endPoints": {
         "temperature": {
-          "title": "Sensor Temp",
+          "title": "Sensor Temp",//change this to something identifiyable e.g sensor location?
           "card-type": "crouton-simple-text",
           "units": "C",
           "values": {
